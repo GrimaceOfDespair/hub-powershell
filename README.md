@@ -23,7 +23,7 @@ Switch to the `src` directory and run `dotnet build`
 Copy the "publish" directory into the PowerShell Modules directory with the name `BlackDuck.Hub`. e.g.
 
 ```
-Copy-Item -Recurse  -Recurse ./publish "$(($env:PSModulePath -split ':')[0])/BlackDuck.Hub" 
+Copy-Item -Recurse ./publish "$(($env:PSModulePath -split ';')[0])/BlackDuck.Hub" 
 ```
 
 # Publishing to PSGallery
